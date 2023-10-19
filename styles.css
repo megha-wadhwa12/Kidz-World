@@ -1,24 +1,16 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
 
 
 *{
     margin: 0;
     padding: 0;
-    /* width: 100vw; */
-    overflow: ;
     box-sizing: border-box;
-    /* font-family: 'Roboto', sans-serif; */
     font-family: "Rubik", sans-serif;
 }
 
 html{
     overflow:visible;
 }
-/* 
-.body{
-    width: 100%;
-} */
 
 .books{
     margin-top: 10%;
@@ -51,8 +43,6 @@ html{
     background-size:100% 100%;
     overflow-clip-margin: content-box;
     width: 100%;
-    height: 500px;
-    /* height: 400px; */
 }
 
 .banner h1{
@@ -62,13 +52,15 @@ html{
 }
 
 .banner h5{
-    font-size: 23px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .text{
+    display: flex;
+    flex-direction: column;
     font-family: none;
-    padding: 110px 0 150px 70px;
+    padding: 6%;
     color: white;
     font-weight: 100;
     width: 100%;
@@ -76,7 +68,7 @@ html{
 }
 
 h3:first-child{
-    margin:0 0 10px 76px;
+    margin:0 0 10px 30px;
 }
 
 .c1{
@@ -155,50 +147,22 @@ footer{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin: 10px 0 5px 72px;
+    margin: 10px 0 5px 30px;
 }
 
 .foothead{
-    /* padding-top: 20px; */
+    margin: 0;
+    padding: 0;
 }
 
 .footerright{
-    margin-right: 40px;
+    margin-right: 20px;
     text-align: right;
 }
 
 .footerright h4{
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
-
-/* 
-@media only screen and (max-width: 600px) {
-    header {
-      height: 200px;
-      font-size: 15px;
-      text-align: start;
-    }
-  
-    header h1 {
-      font-size: 4vh;
-    }
-  
-    header h5 {
-      font-size: 15px;
-    }
-  
-    .header-text {
-      padding: 0% 60% 5% 5%;
-    }
-  
-    body {
-      text-align: center;
-    }
-  
-    .container {
-      justify-content: center;
-    }
-  } */
 
 
   @media screen and (max-width: 768px){
@@ -212,34 +176,35 @@ footer{
         flex-wrap: wrap;
         margin: 30px;
     }
-    .c2,.c3{
+    .c1,.c2,.c3{
         width: 300px;
     }
     
   }
 
   @media screen and (max-width: 425px){
+    
+    .banner img{
+        height: auto;
+    }
     .card1{
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
     }
     .card2,.card3{
         display: flex;
         flex-wrap: wrap;
         margin: 30px;
     }
-    .c2,.c3{
+    .c1,.c2,.c3{
         width: 300px;
     }
+
 
   }
 
   @media screen and (max-width: 375px){
 
-    /* .banner{
-        height: 200px;
-    } */
     .card1{
         display: flex;
         flex-wrap: wrap;
@@ -250,8 +215,14 @@ footer{
         flex-wrap: wrap;
         margin: 30px;
     }
-    .c2,.c3{
+    .c1,.c2,.c3{
         width: 300px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
     }
 
   }
