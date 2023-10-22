@@ -1,228 +1,250 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
-html{
-    overflow:visible;
+html {
+  overflow: visible;
 }
 
-.books{
-    margin-top: 10%;
+.books {
+  margin-top: 10%;
 }
-.navb{
+
+.navb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  padding: 1% 4%;
+}
+
+#logo {
+  width: 100px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+#cart-icon {
+  width: 30px;
+}
+
+.banner {
+  background-image: url("assets/kw-background.png");
+  background-size: 100% 100%;
+  overflow-clip-margin: content-box;
+  width: 100%;
+}
+
+.banner h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 7vh;
+}
+
+.banner h5 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  font-family: none;
+  padding: 6%;
+  color: white;
+  font-weight: 100;
+  width: 100%;
+  height: 100%;
+}
+
+h3:first-child {
+  margin: 0 0 10px 30px;
+}
+
+.c1 {
+  padding: 10px;
+  width: 130px;
+}
+
+.card1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  padding-bottom: 8px;
+  font-family: none;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+.btn {
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6196ff;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.btn img {
+  width: 17px;
+  margin-left: 2px;
+}
+
+.card2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.c2 {
+  width: 220px;
+}
+
+.c3 {
+  width: 220px;
+}
+
+.card3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer {
+  font-family: none;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1%;
+}
+
+.footerleft img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0 5px 30px;
+}
+
+.foothead {
+  margin: 0;
+  padding: 0;
+}
+
+.footerright {
+  margin-right: 20px;
+  text-align: right;
+}
+
+.footerright h4 {
+  padding-bottom: 1%;
+}
+
+@media screen and (max-width: 768px) {
+  .card1 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
-    padding: 1% 4%;
-    
-}
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-#logo{
-    width: 100px;
-}
-
-.right{
+  .card2,
+  .card3 {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+  }
+
+  .c1,
+  .c2,
+  .c3 {
+    width: 300px;
+  }
 }
 
-#cart-icon{
-    width: 30px;
+@media screen and (max-width: 425px) {
+  .banner img {
+    height: auto;
+  }
+
+  .card1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card2,
+  .card3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+  }
+
+  .c1,
+  .c2,
+  .c3 {
+    width: 300px;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
+
+  .text h5 {
+    font-size: 16px;
+  }
 }
 
-.banner{
-    
-    background-image: url('assets/kw-background.png');
-    background-size:100% 100%;
-    overflow-clip-margin: content-box;
-    width: 100%;
-}
+@media screen and (max-width: 375px) {
+  .card1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-.banner h1{
+  .card2,
+  .card3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+  }
+
+  .c1,
+  .c2,
+  .c3 {
+    width: 200px;
+  }
+
+  .text {
     display: flex;
     flex-direction: column;
-    font-size: 7vh;
-}
+    flex-wrap: wrap;
+  }
 
-.banner h5{
-    font-size: 14px;
-    margin-top: 10px;
-}
+  .text h1 {
+    font-size: 20px;
+  }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    font-family: none;
-    padding: 6%;
-    color: white;
-    font-weight: 100;
-    width: 100%;
-    height: 100%;
-}
-
-h3:first-child{
-    margin:0 0 10px 30px;
-}
-
-.c1{
-    padding: 10px;
-    width: 130px;
-}
-
-.card1{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-h1{
-    padding-bottom: 8px;
-    font-family: none;
-}
-
-.price{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px;
-    margin-bottom: 100px;
-}
-
-.btn{
-    padding: 2px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6196FF;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    font-weight: 600;
-    padding: 5px;
+  .text h5 {
     font-size: 12px;
-}
-
-.btn img{
-    width: 17px;
-    margin-left: 2px;
-}
-
-
-.card2{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.c2{
-    width: 220px;
-}
-
-.c3{
-    width: 220px;
-}
-
-.card3{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer{
-    font-family: none;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 1%;
-}
-
-.footerleft img{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: 10px 0 5px 30px;
-}
-
-.foothead{
-    margin: 0;
-    padding: 0;
-}
-
-.footerright{
-    margin-right: 20px;
-    text-align: right;
-}
-
-.footerright h4{
-    padding-bottom: 1%;
-}
-
-
-  @media screen and (max-width: 768px){
-    .card1{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    .card2,.card3{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 30px;
-    }
-    .c1,.c2,.c3{
-        width: 300px;
-    }
-    
   }
-
-  @media screen and (max-width: 425px){
-    
-    .banner img{
-        height: auto;
-    }
-    .card1{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .card2,.card3{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 30px;
-    }
-    .c1,.c2,.c3{
-        width: 300px;
-    }
-
-
-  }
-
-  @media screen and (max-width: 375px){
-
-    .card1{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    .card2,.card3{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 30px;
-    }
-    .c1,.c2,.c3{
-        width: 200px;
-    }
-    .text{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-    }
-
-  }
+}
