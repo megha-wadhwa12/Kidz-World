@@ -98,7 +98,7 @@ function updateCart() {
 }
 
 for (let i = 0; i < addButtons.length; i++) {
-  addButtons[i].onclick = (e) => {
+  addButtons[i].onclick = () => {
     items[i].quantity++;
     updateCart();
   };
@@ -131,10 +131,10 @@ cartButton.onclick = () => {
 
   for (let index = 0; index < items.length; index++) {
     if (items[index].quantity != 0) {
-      // text+="Item name: " +
-      // items[index].name +
-      // " - Quantity: " +
-      // items[index].quantity
+      text+="Item name: " +
+      items[index].name +
+      " - Quantity: " +
+      items[index].quantity
       console.log(
         "Item name: " +
           items[index].name +
@@ -144,8 +144,12 @@ cartButton.onclick = () => {
     }
   }
 
-  //console text
+  // console text
   text +=
     "The Total amount is " + finalDollars + "$ and " + finalCents + "cents";
   console.log(text);
+
+
+  window.open("https://wa.me/8396969870?text="+text,"self")
+
 };
